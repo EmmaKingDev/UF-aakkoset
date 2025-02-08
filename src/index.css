@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dekko";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  background-color: #f9fafb;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.current-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.letter-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14rem;
+  height: 14rem;
+  font-size: 10rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 3rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.animal-container {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 3rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animal-emoji {
+  font-size: 8rem;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.option-button {
+  width: 12rem;
+  height: 12rem;
+  font-size: 4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-button:hover {
+  transform: scale(1.05);
+  background-color: #f9fafb;
+}
+
+.option-button:active {
+  transform: scale(0.95);
+  background-color: #f3f4f6;
+}
+
+.option-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.feedback {
+  position: fixed;
+  top: 0rem;
+  right: 0rem;
+  padding: 100rem;
+  text-align: center;
+  margin: 0;
+  transition: all 0.2s ease;
+  z-index: -1000;
+}
+
+.feedback.correct {
+  background-color: #98d8aa;
+  color: #065f46;
+}
+
+.feedback.incorrect {
+  background-color: #ff9b9b;
+  color: #991b1b;
+}
+
+.restart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32rem;
+  height: 16rem;
+  font-size: 4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.restart-container:hover {
+  transform: scale(1.05);
+}
+
+.restart-button {
+  outline: none;
+  border: none;
+  font-size: 2.5rem;
+  padding: 6rem 2rem;
+  background-color: white;
+  font-family: "Autour One";
+  cursor: pointer;
+}
+
+.restart-button:active {
+  transform: scale(0.95);
+}
