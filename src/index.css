@@ -128,9 +128,6 @@ body {
 }
 
 .restart-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 32rem;
   height: 16rem;
   font-size: 4rem;
@@ -141,10 +138,9 @@ body {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: all 0.2s ease;
-}
-
-.restart-container:hover {
-  transform: scale(1.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .restart-button {
@@ -153,10 +149,117 @@ body {
   font-size: 2.5rem;
   padding: 6rem 2rem;
   background-color: white;
-  font-family: "Autour One";
+  font-family: "Dekko";
   cursor: pointer;
 }
 
-.restart-button:active {
-  transform: scale(0.95);
+/* Tablet and smaller desktop screens */
+@media (max-width: 1024px) {
+  .letter-display,
+  .animal-container {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .letter-display {
+    font-size: 8rem;
+  }
+
+  .animal-emoji {
+    font-size: 7rem;
+  }
+
+  .option-button {
+    width: 10rem;
+    height: 10rem;
+    font-size: 3.5rem;
+  }
+
+  .game-content {
+    gap: 3rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .current-item {
+    gap: 1.5rem;
+  }
+
+  .letter-display,
+  .animal-container {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 2rem;
+  }
+
+  .letter-display {
+    font-size: 5rem;
+  }
+
+  .animal-emoji {
+    font-size: 4rem;
+  }
+
+  .options-container {
+    gap: 1rem;
+  }
+
+  .option-button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .game-content {
+    gap: 2rem;
+  }
+
+  .restart-container {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  .restart-button {
+    font-size: 2rem;
+    padding: 4rem 1.5rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 375px) {
+  .current-item {
+    gap: 1rem;
+  }
+
+  .letter-display,
+  .animal-container {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1.5rem;
+  }
+
+  .letter-display {
+    font-size: 4rem;
+  }
+
+  .animal-emoji {
+    font-size: 3.5rem;
+  }
+
+  .options-container {
+    gap: 0.75rem;
+  }
+
+  .option-button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .game-content {
+    gap: 1.5rem;
+  }
 }
